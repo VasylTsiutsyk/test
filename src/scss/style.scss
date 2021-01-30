@@ -1,0 +1,32 @@
+@import './vars.scss';
+@import './mixins.scss';
+@import './header.scss';
+@import './nav.scss';
+@import './pop-products.scss';
+@import './announcement.scss';
+
+//global
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat;
+  letter-spacing: -0.04em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1110px;
+}
+
+ul {
+  list-style: none;
+}

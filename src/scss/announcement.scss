@@ -1,0 +1,66 @@
+.announcement {
+  display: none;
+  padding: 10px;
+  background: $color-black;
+
+  &.active {
+    display: block;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include respond-below(xs) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__info {
+    padding-left: 160px;
+    margin-right: 260px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0em;
+    color: $color-grey;
+    @include respond-below(md) {
+      padding-left: 100px;
+      margin-right: 200px;
+    }
+    @include respond-below(sm) {
+      padding-left: 60px;
+      margin-right: 100px;
+    }
+    @include respond-below(xs) {
+      padding-left: 0;
+      margin-right: 20px;
+    }
+  }
+  &__close {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: $color-black;
+    background-image: url('../img/close.svg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__link {
+    margin-right: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+    color: $color-grey;
+    text-transform: uppercase;
+    white-space: nowrap;
+    @include respond-below(md) {
+      margin-right: 30px;
+    }
+    @include respond-below(xs) {
+      margin-right: 20px;
+    }
+  }
+}

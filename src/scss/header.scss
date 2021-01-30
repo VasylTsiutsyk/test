@@ -1,0 +1,96 @@
+.header {
+  border-bottom: 1px solid #c4c4c4;
+  &__bg {
+    background: #eef5f7;
+    box-shadow: 0px 2px 6px rgba($color-black, 0.15);
+  }
+
+  &__top {
+    padding: 14px 20px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      @include respond-below(sm) {
+        width: 100%;
+      }
+    }
+    @include respond-below(sm) {
+      flex-wrap: wrap-reverse;
+    }
+  }
+
+  &__bottom {
+    padding: 0 36px;
+    @include respond-below(sm) {
+      padding: 20px 36px;
+    }
+  }
+
+  &__contacts {
+    margin-bottom: 12px;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        a {
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 16px;
+          letter-spacing: 0em;
+          color: $color-black;
+          text-shadow: 0px 2px 6px rgba($color-black, 0.15);
+        }
+      }
+    }
+  }
+
+  &__input {
+    width: 311px;
+    padding: 10px;
+    border: 1.2px solid #9baaae;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 18px;
+    color: $color-black;
+    &::placeholder {
+      color: #9baaae;
+    }
+    &:focus {
+      outline: none;
+      box-shadow: 0px 2px 6px rgba($color-black, 0.45);
+    }
+    @include respond-below(sm) {
+      width: 100%;
+    }
+  }
+
+  &__buttons {
+    @include respond-below(sm) {
+      margin-bottom: 20px;
+      text-align: right;
+    }
+    a {
+      padding-left: 11px;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      background: $color-grey;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 15px;
+      text-transform: uppercase;
+      color: $color-black;
+      &:first-child {
+        margin-right: 15px;
+      }
+      img {
+        display: block;
+      }
+      &:hover {
+        box-shadow: 0px 2px 6px rgba($color-black, 0.45);
+      }
+    }
+  }
+}

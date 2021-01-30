@@ -1,0 +1,32 @@
+.nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include respond-below(sm) {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  }
+  &__item {
+    padding: 22.5px 0;
+    transition: all 3s ease;
+    @include respond-below(sm) {
+      padding: 5px 0;
+    }
+    a {
+      font-weight: bold;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      color: $color-black;
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+}

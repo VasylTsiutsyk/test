@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>radev test</title>
+  </head>
+
+  <body>
+    <div class="announcement active" id="announcement">
+      <div class="announcement__wrap">
+        <p class="announcement__info">
+          Announcement Announcement Announcement Announcement Announcement
+        </p>
+        <a href="http://" target="_blank" class="announcement__link">
+          Special Offers
+        </a>
+        <button class="announcement__close" id="btnClose"></button>
+      </div>
+    </div>
+
+    <header class="header">
+      <div>
+        <div class="header__wrap">
+          <div class="header__bg">
+            <div class="header__top container">
+              <div>
+                <div class="header__contacts">
+                  <ul>
+                    <li><a href="tel:+123 456 78 90">+123 456 78 90</a></li>
+                    <li>
+                      <a href="mailto:test_dev@gmail.com">test_dev@gmail.com</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="header__input-field">
+                  <input
+                    type="text"
+                    class="header__input"
+                    placeholder="Search"
+                  />
+                </div>
+              </div>
+
+              <div class="header__buttons">
+                <a href="http://#" target="_blank">
+                  3 items
+                  <img src="./img/cart.svg" alt="product curt ico" />
+                </a>
+                <a href="http://#" target="_blank"
+                  >log in
+                  <img src="./img/user.svg" alt="user ico" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="header__bottom nav__wrap container">
+            <nav class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#">BANNER PRINTING</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#">SIGN PRINTING</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#">STANDS AND DISPLAYS</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#">STICKERS</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#">WINDOW GRAPHICS</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="pop-products">
+        <div class="pop-products__bg"></div>
+        <div class="container">
+          <div class="pop-products__wrap">
+            <div class="pop-products__content">
+              <h2 class="pop-products__title title">Popular Products</h2>
+
+              <div class="pop-products__swiper">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="pop-products__item product">
+                        <div class="product__check">
+                          <input
+                            type="checkbox"
+                            name=""
+                            id="checkLike"
+                            checked
+                          />
+                          <label for="checkLike" class="label"></label>
+                        </div>
+
+                        <div class="product__image">
+                          <img src="./img/halloween-banners.svg" alt="" />
+                        </div>
+
+                        <div class="product__rating"></div>
+
+                        <div class="product__line"></div>
+
+                        <h3 class="product__title">Halloween Banners</h3>
+
+                        <p>
+                          Starts at <span class="product__price">7.99$</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="pop-products__item product">
+                        <div class="product__check">
+                          <input type="checkbox" name="" id="checkLike" />
+                          <label for="checkLike" class="label"></label>
+                        </div>
+                        <div class="product__image">
+                          <img src="./img/stickers.svg" alt="" />
+                        </div>
+                        <div class="product__rating"></div>
+
+                        <div class="product__line"></div>
+
+                        <h3 class="product__title">Circle Stickers</h3>
+                        <p>
+                          Starts at <span class="product__price">7.99$</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="pop-products__item product">
+                        <div class="product__check">
+                          <input type="checkbox" name="" id="checkLike" />
+                          <label for="checkLike" class="label"></label>
+                        </div>
+                        <div class="product__image">
+                          <img src="./img/party-banners.svg" alt="" />
+                        </div>
+                        <div class="product__rating"></div>
+
+                        <div class="product__line"></div>
+
+                        <h3 class="product__title">Party Banners</h3>
+                        <p>
+                          Starts at <span class="product__price">7.99$</span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="pop-products__item product">
+                        <div class="product__check">
+                          <input type="checkbox" name="" id="checkLike" />
+                          <label for="checkLike" class="label"></label>
+                        </div>
+                        <div class="product__image">
+                          <img src="./img/sign-printing.svg" alt="" />
+                        </div>
+                        <div class="product__rating"></div>
+
+                        <div class="product__line"></div>
+
+                        <h3 class="product__title">Sign Printing</h3>
+                        <p>
+                          Starts at <span class="product__price">7.99$</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
